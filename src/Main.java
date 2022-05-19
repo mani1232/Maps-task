@@ -1,8 +1,10 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
 
 public class Main {
     public static HashMap<String, Integer> hashMap = new HashMap<>();
+    LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
