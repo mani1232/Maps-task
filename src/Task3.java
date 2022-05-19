@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -12,11 +11,12 @@ public class Task3 {
         linkedHashMap.put("Katya", "katya@mail.ua");
         linkedHashMap.put("Andrey", "andrey@mail.ua");
         linkedHashMap.put("Nikolay", "nikolay@mail.ua");
+        System.out.println(linkedHashMap);
         for (Map.Entry<String, String> entry : linkedHashMap.entrySet()) {
-            System.out.println("Name: " + entry.getKey() + " Mail: " + entry.getValue());
-            if (entry.getValue().equals(ChangeMailName)) {
+            if (entry.getKey().equals(ChangeMailName)) {
                 linkedHashMap.replace(entry.getKey(), NewMail);
             }
+            System.out.println("Name: " + entry.getKey() + " Mail: " + entry.getValue());
         }
     }
 
@@ -24,7 +24,7 @@ public class Task3 {
         while (true) {
             try {
                 System.out.println("Enter key");
-                String key = s.next().toLowerCase();
+                String key = s.next();
                 if (linkedHashMap.containsKey(key)) {
                     System.out.println(linkedHashMap.get(key));
                 } else {

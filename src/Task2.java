@@ -7,7 +7,7 @@ public class Task2 {
         while (true) {
             try {
                 System.out.println("Enter key");
-                String key = s.next().toLowerCase();
+                String key = s.next();
                 if (hashMap.containsKey(key)) {
                     System.out.println(hashMap.get(key).intValue());
                 } else {
