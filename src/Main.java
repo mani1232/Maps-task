@@ -3,8 +3,8 @@ import java.util.LinkedHashMap;
 import java.util.Scanner;
 
 public class Main {
-    public static HashMap<String, Integer> hashMap = new HashMap<>();
-    LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
+    static HashMap<String, Integer> hashMap = new HashMap<>();
+    static LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -13,5 +13,7 @@ public class Main {
         System.out.println("Task - 2");
         new Task2(scanner, hashMap);
         System.out.println("Task - 3");
+        new Task3(linkedHashMap);
+        new Task3(scanner, linkedHashMap);
     }
 }
