@@ -28,7 +28,7 @@ public class Task3 {
                 if (linkedHashMap.containsKey(key)) {
                     System.out.println(linkedHashMap.get(key));
                 } else {
-                    System.out.println("Not found this key, created new \nEnter value");
+                    System.out.println("Not found this key, created new \nEnter Mail");
                     linkedHashMap.put(key, s.next());
                 }
                 System.out.print("""
